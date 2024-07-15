@@ -172,4 +172,12 @@ try_install_from_wheel(
         "https://github.com/sdbds/DSINE/releases/download/1.0.2/dsine-2024.3.23-py3-none-any.whl",
     ),
 )
+
+try_install_from_wheel(
+    "metric3d",
+    wheel_url=os.environ.get(
+        "METRIC3D_WHEEL",
+        "https://github.com/sdbds/Metric3D/releases/download/1.0.0/metric3d-2024.5.12-py3-none-any.whl",
+    ),
+)
 try_remove_legacy_submodule()
